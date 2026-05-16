@@ -24,3 +24,19 @@ account = BankAccount(1000)
 
 account.deposit(500)
 account.show_balance()
+# oop concepts123
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
+
+    @abstractmethod
+    def start(self):
+        pass
+
+class Car(Vehicle):
+
+    def start(self):
+        print("Car starts with key")
+
+c = Car()
+c.start()
