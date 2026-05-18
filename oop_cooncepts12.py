@@ -61,3 +61,28 @@ students = [
 # loop through objects
 for student in students:
     student.show_details()
+
+    
+
+    # Class Car with attributes and method
+class Car:
+
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+    def show_car(self):
+        print(f"Brand: {self.brand}, Model: {self.model}")
+
+
+# Objects
+car1 = Car("Toyota", "Corolla")
+car2 = Car("Honda", "Civic")
+car3 = Car("BMW", "X5")
+
+# Store objects
+cars = [car1, car2, car3]
+
+# Loop through objects
+for car in cars:
+    car.show_car()
