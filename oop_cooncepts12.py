@@ -86,3 +86,25 @@ cars = [car1, car2, car3]
 # Loop through objects
 for car in cars:
     car.show_car()
+
+
+    # cunter class with method to increment count
+class Counter:
+    def __init__(self):
+        self.count=0
+    def show_count(self):
+        print(f"Count: {self.count}")
+
+        while self.count<5:
+            print("count,",self.count)
+
+            self.count += 1
+
+    # object
+object= Counter()
+
+# calling method
+object.show_count()
+
+    # def increment(self):
+    #     self.count += 1
