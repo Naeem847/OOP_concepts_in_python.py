@@ -3,6 +3,7 @@ class Animal:
         print("Animal sound")
 
 class Dog(Animal):
+    
     def sound(self):
         print("Bark")
 
