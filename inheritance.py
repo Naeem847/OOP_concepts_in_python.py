@@ -24,3 +24,4 @@ students = [Student(), Student(), Student()]
 # Use loop
 for s in students:
     s.introduce()
+    
