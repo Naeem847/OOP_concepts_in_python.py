@@ -25,3 +25,19 @@ students = [Student(), Student(), Student()]
 for s in students:
     s.introduce()
     
+
+# 3. Text Information Processor (Data Handling)
+text=input("paste your text here: ")
+
+words=text.split()
+
+print(f"total words: {len(words)}")
+
+search_word=input("enter a word to search for: ")
+
+if search_word in text:
+
+    print(f"found  the word '{search_word}' appears  {text.count(search_word)} times in the text.")
+else:
+    
+    print("word not found in the text:")
