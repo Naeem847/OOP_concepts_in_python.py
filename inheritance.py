@@ -41,3 +41,21 @@ if search_word in text:
 else:
     
     print("word not found in the text:")
+
+# 3. Smart Task Checklist (Basic Automation)    
+todo_list=[]
+while True:
+    action=input("\nchoose [add] task,[view] tasks, or [exit] to quit: ").lower()
+    if action=="add":
+        task=input("enter a task to add: ")
+        todo_list.append(task)
+        print(f"task '{task}' added to the list.")
+    elif action=="view":
+        print("\nYour To-Do List:")
+        for idx, task in enumerate(todo_list, start=1):
+            print(f"{idx}. {task}")
+    elif action=="exit":
+        print("Exiting the program. Goodbye!")
+        break
+    else:
+        print("Invalid option. Please choose [add], [view], or [exit].")
