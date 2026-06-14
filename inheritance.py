@@ -59,3 +59,39 @@ while True:
         break
     else:
         print("Invalid option. Please choose [add], [view], or [exit].")
+
+        # You can add a while loop and if-else statement to make the program interactive and allow users to add tasks, view the list, or exit the program.
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def display(self):
+        print("Name:", self.name)
+
+class Student(Person):
+    def study(self):
+        print(self.name, "is studying")
+
+# Create object
+s = Student("Ali")
+
+while True:
+    print("\n1. Display Name")
+    print("2. Study")
+    print("3. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        s.display()
+
+    elif choice == 2:
+        s.study()
+
+    elif choice == 3:
+        print("Program Ended")
+        break
+
+    else:
+        print("Invalid choice! Please try again.")        
