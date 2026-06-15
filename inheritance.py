@@ -95,3 +95,27 @@ while True:
 
     else:
         print("Invalid choice! Please try again.")        
+
+# This code demonstrates several Object-Oriented Programming (OOP) concepts in Python using a for loop and an if-else statement.
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def result(self):
+        if self.marks >= 50:
+            print(self.name, "has Passed")
+        else:
+            print(self.name, "has Failed")
+
+
+# Create objects
+students = [
+    Student("Ali", 75),
+    Student("Sara", 45),
+    Student("Ahmed", 60)
+]
+
+# for loop
+for s in students:
+    s.result()
