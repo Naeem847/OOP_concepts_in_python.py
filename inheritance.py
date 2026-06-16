@@ -119,3 +119,18 @@ students = [
 # for loop
 for s in students:
     s.result()
+# This code defines a `BankAccount` class with a private variable `__balance` and a method `check_balance()` to check the balance. It then creates a list of `BankAccount` objects with different balances and uses a for loop to call the `check_balance()` method for each account, demonstrating encapsulation and data hiding in OOP.
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance   # Private variable
+
+    def check_balance(self):
+        if self.__balance > 0:
+            print("Balance:", self.__balance)
+        else:
+            print("No balance available")
+
+accounts = [BankAccount(5000), BankAccount(0), BankAccount(2500)]
+
+for account in accounts:
+    account.check_balance()
