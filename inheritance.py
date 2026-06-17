@@ -134,3 +134,26 @@ accounts = [BankAccount(5000), BankAccount(0), BankAccount(2500)]
 
 for account in accounts:
     account.check_balance()
+# This code defines an `Employee` class with a private variable `__salary` and a method `check_salary()` to check if the salary is high or low. It then creates a list of `Employee` objects with different salaries and uses a for loop to call the `check_salary()` method for each employee, demonstrating encapsulation and data hiding in OOP.
+    
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.__salary = salary    # Private variable
+
+    def check_salary(self):
+        if self.__salary >= 50000:
+            print(self.name, "has a High Salary")
+        else:
+            print(self.name, "has a Low Salary")
+
+# Create objects
+employees = [
+    Employee("Ali", 60000),
+    Employee("Sara", 40000),
+    Employee("Ahmed", 55000)
+]
+
+# Loop through all employees
+for emp in employees:
+    emp.check_salary()
