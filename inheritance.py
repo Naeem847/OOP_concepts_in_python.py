@@ -157,3 +157,21 @@ employees = [
 # Loop through all employees
 for emp in employees:
     emp.check_salary()
+
+# student class with private variable marks and methods to set and get marks, demonstrating encapsulation in OOP. The code creates a Student object, sets the marks, and retrieves them using the getter method.
+
+class Student:
+    def __init__(self):
+        self.__marks = 0    # Private variable
+
+    def set_marks(self, marks):
+        self.__marks = marks
+
+    def get_marks(self):
+        return self.__marks
+
+
+# Create object
+s = Student()
+s.set_marks(85)
+print("Marks:", s.get_marks())
